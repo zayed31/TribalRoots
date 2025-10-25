@@ -4,67 +4,73 @@ import Footer from '../components/Footer';
 import BackButton from '../components/BackButton';
 
 export default function AmbassadorsList() {
-  // Mock data for ambassadors
+  // Mock data for ambassadors - connected to our shops
   const ambassadors = [
     {
       id: 1,
       name: "Ananya Sharma",
-      region: "Rajasthan, India",
+      region: "Karnataka, India",
       avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuDwB0d_GV9em_IwKAWoFT6oe0BUiF2H5pfvxHFhad90LLkPcgEqLPP_x2e0nPs6CfBYrVFD-mnA-JeBGIHxLYsO0vhNlOcnBCvxeLfwpDOwXQzmRbDasZL9BRNCn5oBHx71Y6kBLkNZBkKGw9-P1gduyrTWqbxGSCKduS7EYibty1DcM_0sKFuwJmA7quVQsVxuK6zfWTmn1Phm9ZYGs4IB8WXamLvhMo8GQGOhKkmX3sgg3L7_CHvu3vebMRkrvqkrhfRm7Ps7DA",
-      shopsVerified: 42,
-      reviews: 112,
-      specialties: ["Textiles", "Pottery", "Jewelry"],
-      verified: true
+      shopsVerified: 38,
+      reviews: 124,
+      specialties: ["Handwoven Textiles", "Bandhani", "Patola Silk"],
+      verified: true,
+      bio: "Textile historian and curator specializing in traditional Indian weaving techniques. Verified Gujarat Textiles and other authentic textile shops across South India."
     },
     {
       id: 2,
       name: "Rohan Mehta",
-      region: "Gujarat, India",
+      region: "Karnataka, India",
       avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuCU320hYrwZGIreS1uoHGJdKmmPJcXx8yVARyNE19flIzHEXrP9X3Fm27I-cl4x1A51xMz5ieUPPqb3gzVmwOduxQtz8YqncSWYUjDSCPz7RkT9bwcQMhvtvQ0jS_5ZYeGL2wTREZNiOXDIdYjneNr-8ICl1M8agXmjbw094ftWA6Qb0yhNvlvRkXf_HNjwL2EGXjfS1_L_ad5stblNQD7h-wGBewgPu6ymcIufAERjyhzIuaZuFIE-ABhpX0lU-oxUVlcQuogU5g",
-      shopsVerified: 35,
-      reviews: 89,
-      specialties: ["Handicrafts", "Textiles", "Folk Music"],
-      verified: true
+      shopsVerified: 45,
+      reviews: 156,
+      specialties: ["Blue Pottery", "Traditional Ceramics", "Artisan Crafts"],
+      verified: true,
+      bio: "Ceramics expert and cultural preservationist. Verified Rajasthan Pottery and numerous traditional pottery workshops across India."
     },
     {
       id: 3,
-      name: "Priya Singh",
-      region: "Maharashtra, India",
+      name: "Priya Deshmukh",
+      region: "Karnataka, India",
       avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD9_CE8qqtOmCHefhhSjFR2I8jsnrHEMOirqv7O8w2_cep3gJqJgrhECSJ2zDRFXY82_aY6mUMgbqMrk7ICGCNNtO8_NRggqmki-C-O0K7Eag2L4LRqV_w6JBTm_S1bEOx2BZ8TC3c9PwjOrWEcvyo82v-lZbP6C1J1dpnEpXlIVTYzirB0Ucib3R0yyLO1s8H_CDJsE3S3Ff-4VmaDYkNb6daO2XsCldsCcUUHsfbsEr637xMXOhdDCZjPsLD8-B5q2CJyHy-_wQ",
-      shopsVerified: 28,
-      reviews: 67,
-      specialties: ["Warli Art", "Tribal Cuisine", "Folk Performances"],
-      verified: true
+      shopsVerified: 32,
+      reviews: 98,
+      specialties: ["Warli Art", "Tribal Paintings", "Folk Art"],
+      verified: true,
+      bio: "Art historian and Warli art specialist from Maharashtra. Verified Warli Art Studio and promotes authentic tribal art forms across India."
     },
     {
       id: 4,
-      name: "Aditya Kumar",
+      name: "Rajesh Nair",
       region: "Kerala, India",
       avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuC3VmaP6ggMTRl-snzLLFyWllVw3Qk8et5WsHPGSMJthWzhCJ_8XjH4cBwU7UY0Oe7wx9jUFEHjWpbyFYQ9YmN7EFH6Qdc6DfSdWBcrWNGcXdR6KYlUus5w3n4U_1N_9zYm2Jw6jVFQuHOA4Ov9kY0Lz5GqHAzWpeU17ByRRH5spjIWfE9BBzur0D40N8sgCEC8BZDq6sjAblbP4TRzA5EMfzQRQ63u_sDK7ICJTBGdFaFZKV6BSe81WfTMeBu-GFnlF4aYitVKEQ",
-      shopsVerified: 31,
-      reviews: 78,
-      specialties: ["Spices", "Traditional Crafts", "Cultural Sites"],
-      verified: true
+      shopsVerified: 41,
+      reviews: 134,
+      specialties: ["Spices", "Ayurveda", "Traditional Agriculture"],
+      verified: true,
+      bio: "Spice trader and Ayurvedic expert with 15 years of experience. Verified Kerala Spices and other authentic spice suppliers across South India."
     },
     {
       id: 5,
-      name: "Meera Desai",
-      region: "Odisha, India",
+      name: "Kavita Borgohain",
+      region: "Meghalaya, India",
       avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuBtB61SOr3odyNQ9nEWToJ63LU42l-5Peg2cEAR8eiTKYy8aUPx1dRz07G0w7CSeTpCfCppUAVsy57meK-ZOmUGDf4-sk4G9wTqIatQGtxCFf0LKG8l1To-KCQ_Ue4eoUVHcjmgiuo-YzbS7xb55cpxjHLlEVjbhzu5FcddpIavsmerybXcyW2FgWbRCyoNCa44Yrqr9_16CH1egh2oSmJ6zVaoFtahLQUkR3mOLZxKnDc48Ws-N0cR1dRi-A1SKqMEBpWyW4C4sA",
-      shopsVerified: 39,
-      reviews: 102,
-      specialties: ["Pattachitra", "Handloom", "Tribal Jewelry"],
-      verified: true
+      shopsVerified: 29,
+      reviews: 87,
+      specialties: ["Bamboo Crafts", "Northeast Handicrafts", "Sustainable Crafts"],
+      verified: true,
+      bio: "Bamboo craft specialist from Assam. Verified Northeast Bamboo Crafts and champions sustainable artisan practices from the Seven Sisters states."
     },
     {
       id: 6,
-      name: "Vikram Nair",
-      region: "Tamil Nadu, India",
+      name: "Vikram Patel",
+      region: "Gujarat, India",
       avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD1SOjyMCX_-h8iYQ_rW5J6jw14VjPO1MZ6LLvxpeJjBdqSqj44ixH5xlf6yQ_K_gdoGRNlTalpfHVAqiIEl6PGda-awVfOuHjLGOAMW2WJ2glDLwY7KR21rva2rCcHh_xyCsHvW4z4Zqy4tVXrpEVktfStimekZiJk_fxF6tjPN-v0zCyoQ8blzr05EJ2LmCgdmXUUM7rN078uR5fjabPbmPOCB2M0Um6jPVQmBfJoYxemnOhLkP6x70zXUEFtAEutJ905D3WsCg",
-      shopsVerified: 26,
-      reviews: 54,
-      specialties: ["Bronze Sculptures", "Temple Art", "Folk Dance"],
-      verified: true
+      shopsVerified: 36,
+      reviews: 102,
+      specialties: ["Cultural Routes", "Heritage Sites", "Folk Traditions"],
+      verified: true,
+      bio: "Cultural tour guide and heritage consultant. Specializes in creating authentic cultural routes and verifying traditional craft shops across Western India."
     }
   ];
 

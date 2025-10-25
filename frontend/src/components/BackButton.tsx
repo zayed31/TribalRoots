@@ -6,10 +6,10 @@ export default function BackButton() {
   return (
     <button 
       onClick={() => navigate(-1)}
-      className="flex items-center gap-2 text-accent-light dark:text-accent-dark hover:text-primary dark:hover:text-primary transition-colors group"
+      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-stone-100 dark:bg-stone-800/50 text-stone-700 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700/50 transition-all duration-200 border border-stone-200 dark:border-stone-700 shadow-sm hover:shadow group"
     >
-      <span className="material-symbols-outlined">arrow_back</span>
-      <span className="text-sm font-medium">Back</span>
+      <span className="material-symbols-outlined text-[20px]">arrow_back</span>
+      <span className="text-sm font-semibold">Back</span>
     </button>
   );
 }

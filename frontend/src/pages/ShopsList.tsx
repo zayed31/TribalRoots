@@ -7,63 +7,53 @@ export default function ShopsList() {
   const shops = [
     {
       id: 1,
-      name: "Artisan's Haven",
-      location: "Jaipur, Rajasthan",
-      category: "Gond Art & Handicrafts",
+      name: "Gujarat Textiles",
+      location: "Chikmagalur, Karnataka",
+      category: "Hand-woven Textiles",
       rating: 4.5,
-      reviews: 23,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD9zmepNxcCfO0WXr8XmgIAJW2zIvdiSyKFnkZbE23rsuW4pQRPfNuoxDglyf2p27p1EWj3cYQxSqn7EF-sJypaRl0IBpQetPPQIEzA5Dpv_SFGcTYtT7xG9iEZU87SwIb3lD7DXBtInNHNUTilZCsdcfHlQ1W5sDl5rSEoa8dGQSsm5eFP3anbCJppkqEJSJbtEE9-To7el7D9cPkCR7g3YwS0kdgyBKpWnX4HQ2Ma_2nEFrHMZle4g12bbq4hP-U3ngjJrYIKVQ",
-      description: "Hand-painted Gond art, Dokra metal crafts, and handwoven tussar silk sarees."
+      reviews: 123,
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCoxUC_FYzoRsn9lQQLhTzuCQsWWfT46t5P1lBDzSchopMn05l0mRqgPZ4qrPVYf2DqmTQUp9YiwG43jpRMh_MU9wNmN0XAzsFzjz3fECL9YZwjWycYfqnWnxwhMw-ky7fdnF2mTRF6YU2d_cj1S_AcoXZsNf66po_MCs4-VLt0tyqU-cCt0yq0GRj9vzKzB_vr4ePYpJ-vLobiO5x7mcGCsuVMPdDwPOOvIwxD4vEu4J21jPk1DFTfFTg3ZAM3z_W_B8NXxAn1Ow",
+      description: "Authentic handwoven textiles like Bandhani tie-dye and Patola silk sarees from Gujarat's finest artisans."
     },
     {
       id: 2,
-      name: "Gujarat Textiles",
-      location: "Ahmedabad, Gujarat",
-      category: "Hand-woven Textiles",
+      name: "Rajasthan Pottery",
+      location: "Bengaluru, Karnataka",
+      category: "Blue Pottery",
       rating: 4.8,
-      reviews: 45,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCa0OYD4KcLRBBuwCaMAKI8ROAojBH_29r7Tzhdb8PGq2dwuEEw3jWnE81jcLMPedEQMfaMEF6vqcmP7ORpSQ_83XM0ihYR06vkz4JmK3DJxAcLYDejfap_8IAY8byX0eXFDdnsxFK3q7V6ujyJvy1huJeHda3iBEBHfKU9C4BCwwlnoruiZxgScvsBaoQOLnWe3M2lNNvHUmTcpQcqlPjkIs7e0ws7axIzx577rV0yH5kfmwkxpkwaOiyI9N693-stcYLLpkXfVg",
-      description: "Traditional hand-woven textiles and fabrics from Gujarat's finest artisans."
+      reviews: 142,
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCHJNIw_y2BDDIy7x-N-lG6rOB5W6jClHkC0FAqA27Ea-oMGUvzWFfpWf34n4zrRYBsix7wu-6MnX4AaxV7AXvYNByAVLRSaLDc4ZX9W_p9QaVdnkiEF27SiFGgECsh_SZkF4BqY4VK9Mwu9vHNXGA5rrtYF7boMUGxqb-zrrmcP6HO_9Xfhv_tHWy7n72vfKOZq1HMbHxHPYtnS1zeej2_X2z89EukuKehwM_ALzagonFqSt3M27qs3vEzz3_gjwxefq_HVUtVuA",
+      description: "Authentic Rajasthani blue pottery in Karnataka, offering a vibrant collection of handmade crafts."
     },
     {
       id: 3,
-      name: "Rajasthan Pottery",
-      location: "Jaipur, Rajasthan",
-      category: "Traditional Pottery",
-      rating: 4.3,
-      reviews: 18,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCX_Y_M9Dp-hvBihpalh-GNNnN9pM11ZbIrrwsOw8dUT51k1q60HgzmYemdYO1kyOe2CvSKNUJGDq0iaYuQ13FPwuB8w7k8RJyGVRJ8XLB63uiXSh523pe3HpxgpQncghiDBCHhMSc0j0U7DulrxIvhj7JfaF36Jg615kTl-TFmgJNq-j6vEVq5LqBjoVV9h4wV6FeP7kTRId2fDQC6Adx_FGmfRV1HpHj3Kg96fQ3yNnSRx-cDSUDZBGpIIbluHns0WysUh744jA",
-      description: "Beautifully crafted traditional pottery with intricate designs."
+      name: "Kerala Spices",
+      location: "Madikeri, Karnataka",
+      category: "Spices & Herbs",
+      rating: 4.8,
+      reviews: 124,
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDL_Y4Xw1qX8PWYJQ8y6tR2f-8UG1iDRcZm_TDy1_NvkulZKm9lcG8eXOM0_mFSxcIQIkh3hPyRZgvenxKy_7lNAqnA_IBOUZUcHrBJYrHhZzsikeDltV_rrK4PfocgPHM7PO2299cxUcC4MG8qyZOrlN2cmP5HLT9GHPc9veoQaNrfn57cyqCjnIexQqcIlmBqvag_m6fVYVf1hYOy9v1pQJfaJVb0Ul5eeaBC9Ufkyi-JjQAXhoUdaMcUDqxNyDLjMIt6j31QKQ",
+      description: "Hand-picked, sun-dried spices from the Kuruba tribe, celebrating Kerala's rich spice heritage."
     },
     {
       id: 4,
-      name: "Kerala Spices",
-      location: "Kochi, Kerala",
-      category: "Spices & Herbs",
-      rating: 4.7,
-      reviews: 67,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBGCvK_NQQjq10RbQkAWBFzL0NA8xaBxkoM9aLgTgbEHK05xw2aaAaNBMossllIL2_MGVugXUoOB2Mxoy5J9zggvkgPrg2lSx4a4wtunIYEeogV0KGJ7U9ssRDSP2TxoAMY9720SRE9FguEFqB06UJmdT6t5yvJH3acACf34DSuk6VP_yMsF0xHMfjkXulDsdK0ARUyPIPAnqvZGVby4ajJTmG1cZfseU62JQM8n3LGCBbaGR6QMiuVgcb52Y_u34a6Q7KHLEa3kw",
-      description: "Aromatic and authentic spices directly from Kerala's spice gardens."
+      name: "Warli Art Studio",
+      location: "Mysuru, Karnataka",
+      category: "Warli Tribal Art",
+      rating: 4.5,
+      reviews: 128,
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCx1JdlVT-7DnwpWfm_mlwQu0UwaNEBeOO_Q-ZTsgYKdR8UNEuOetoEUju8VmltHcJUai6B2ohHCzRTu4Vc6fCRxqOTAlMpMp5PpViyGO7g74gO2Sy27w-Ql0pZJsNG3ZoJ22piTNm51qYMd9Skvn5213CE--Ti7qEZzQryrtOH39Z2Xv-9UDReF-ushhNXYXUIxOti2n-bSNbcvlireAG3gFPkS3l2LabeXUDyZYsO2MjOXjCsMlU2iwWlXsGzQt_xWDvwyNZP5A",
+      description: "Traditional Warli art studio preserving ancient tribal traditions with contemporary pieces."
     },
     {
       id: 5,
-      name: "Warli Art Studio",
-      location: "Mumbai, Maharashtra",
-      category: "Warli Tribal Art",
-      rating: 4.6,
-      reviews: 31,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAiaf3NjV-coqQ6AlC6QZp7MBTaRwuEwk0Lcozd2opjJd1Y1LhgFy_LuShXmw-55FsO_XIH1jwXrJslaJ7zLEnGNnxujmky3rhGRMCnpEr4c_qTP8sUQk8IRYm1qOTOex3L18q56I4XQc3pTrBOOe9ToePmqYY7WRvrpIDMdYxMD5bSkNNRMVvlOZnwwf3kOSyhiE0iQrMbF28EorfMh4G7aJiCOzT2jXalOSTwPfvOflrYQj1qWBRzMI7W1GHB7CTdHD4qZwmKDA",
-      description: "Contemporary Warli art pieces preserving ancient tribal traditions."
-    },
-    {
-      id: 6,
       name: "Northeast Bamboo Crafts",
-      location: "Shillong, Meghalaya",
+      location: "Bengaluru, Karnataka",
       category: "Bamboo Handicrafts",
-      rating: 4.4,
-      reviews: 29,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDrW64jbWOVAFrTYi9Kx748KOw38KGTJxaI07K-pvPoRnHFzDEmb-_v2mTxUGSq8tPvcR83_nFv10IQKbyoc2AfA82lq8LWlLQnRmoJoYBaVzIIaJOq8VDEOKaYJd_Gf2HBL93odacmGY2TX5vE7s9NZ_C9lGpV0ndvn71x5RLLmIUUCKEqfMREiJRTkR0JtIGRFivjcYrhe1iO3NMzIzRSUdBa8VbqxSDsGHI-of5o8InSgl7EpIKK2bfJmQomS5-WjrWtrd11Pg",
-      description: "Handcrafted bamboo products from the skilled artisans of Northeast India."
+      rating: 4.8,
+      reviews: 124,
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA0vads5uIFbKKorG_DiY3Lgj8siTMyw--GjePg8jgHDLI7XkzfLkXtmuaDTtpGIH6wKOwOb2s4Q8a39hLUk5GdAKX2j1_CUd3uqo5rO11PqXHeJr_cRIS6c0PTOEXbdFhflSh8q8N7eEqB7ggQrzKSkDS3rsBexTBvZwaBT7OxiWUat0jTs4yjIxr2f7-cA5S53VJS2o1qu_nag-fVYUvUWFh9ihuyAi3WXUgnrzkgnwvLQttTNRVOoDmZYtZ7D0Iv5chQIyrzEw",
+      description: "Authentic artistry from the Seven Sisters, bringing Northeastern bamboo weaving to Karnataka."
     }
   ];
 
@@ -74,18 +64,30 @@ export default function ShopsList() {
 
     for (let i = 0; i < fullStars; i++) {
       stars.push(
-        <span key={`full-${i}`} className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+        <svg key={`full-${i}`} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 24 24">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
       );
     }
     if (hasHalfStar) {
       stars.push(
-        <span key="half" className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star_half</span>
+        <svg key="half" className="w-4 h-4 text-yellow-400" viewBox="0 0 24 24">
+          <defs>
+            <linearGradient id="half-list">
+              <stop offset="50%" stopColor="currentColor"/>
+              <stop offset="50%" stopColor="#D1D5DB"/>
+            </linearGradient>
+          </defs>
+          <path fill="url(#half-list)" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
       );
     }
     const remainingStars = 5 - Math.ceil(rating);
     for (let i = 0; i < remainingStars; i++) {
       stars.push(
-        <span key={`empty-${i}`} className="material-symbols-outlined text-sm">star</span>
+        <svg key={`empty-${i}`} className="w-4 h-4 text-gray-300 fill-current" viewBox="0 0 24 24">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
       );
     }
     return stars;

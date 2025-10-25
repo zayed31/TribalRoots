@@ -1,8 +1,16 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Toast from '../components/Toast';
 
 export default function Home() {
+  const [showToast, setShowToast] = useState(false);
+
+  const handleComingSoon = () => {
+    setShowToast(true);
+  };
+
   return (
     <div className="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
       <div className="layout-container flex h-full grow flex-col">
@@ -31,10 +39,16 @@ export default function Home() {
                         <span className="material-symbols-outlined">search</span>
                       </div>
                       <input 
-                        className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden bg-transparent text-text-light dark:text-text-dark focus:outline-0 focus:ring-0 border-0 h-12 placeholder:text-text-light/70 dark:placeholder:text-text-dark/70 px-3 text-base" 
+                        onClick={handleComingSoon}
+                        onFocus={(e) => e.target.blur()}
+                        readOnly
+                        className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden bg-transparent text-text-light dark:text-text-dark focus:outline-0 focus:ring-0 border-0 h-12 placeholder:text-text-light/70 dark:placeholder:text-text-dark/70 px-3 text-base cursor-pointer" 
                         placeholder="Search for a place to find nearby cultural spots" 
                       />
-                      <button className="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-yellow-500">
+                      <button 
+                        onClick={handleComingSoon}
+                        className="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-yellow-500 transition-colors"
+                      >
                         <span className="truncate">Search</span>
                       </button>
                     </div>
@@ -67,14 +81,14 @@ export default function Home() {
                   <div className="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
                     <div 
                       className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" 
-                      style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCX_Y_M9Dp-hvBihpalh-GNNnN9pM11ZbIrrwsOw8dUT51k1q60HgzmYemdYO1kyOe2CvSKNUJGDq0iaYuQ13FPwuB8w7k8RJyGVRJ8XLB63uiXSh523pe3HpxgpQncghiDBCHhMSc0j0U7DulrxIvhj7JfaF36Jg615kTl-TFmgJNq-j6vEVq5LqBjoVV9h4wV6FeP7kTRId2fDQC6Adx_FGmfRV1HpHj3Kg96fQ3yNnSRx-cDSUDZBGpIIbluHns0WysUh744jA")'}}
+                      style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHJNIw_y2BDDIy7x-N-lG6rOB5W6jClHkC0FAqA27Ea-oMGUvzWFfpWf34n4zrRYBsix7wu-6MnX4AaxV7AXvYNByAVLRSaLDc4ZX9W_p9QaVdnkiEF27SiFGgECsh_SZkF4BqY4VK9Mwu9vHNXGA5rrtYF7boMUGxqb-zrrmcP6HO_9Xfhv_tHWy7n72vfKOZq1HMbHxHPYtnS1zeej2_X2z89EukuKehwM_ALzagonFqSt3M27qs3vEzz3_gjwxefq_HVUtVuA")'}}
                     ></div>
                     <div className="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
                       <div>
                         <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Rajasthan Pottery</p>
-                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Beautifully crafted traditional pottery.</p>
+                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Authentic Rajasthani blue pottery.</p>
                       </div>
-                      <Link to="/shops/1" className="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30">
+                      <Link to="/shops/2" className="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30">
                         <span className="truncate">View Shop</span>
                       </Link>
                     </div>
@@ -84,14 +98,14 @@ export default function Home() {
                   <div className="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
                     <div 
                       className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" 
-                      style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGCvK_NQQjq10RbQkAWBFzL0NA8xaBxkoM9aLgTgbEHK05xw2aaAaNBMossllIL2_MGVugXUoOB2Mxoy5J9zggvkgPrg2lSx4a4wtunIYEeogV0KGJ7U9ssRDSP2TxoAMY9720SRE9FguEFqB06UJmdT6t5yvJH3acACf34DSuk6VP_yMsF0xHMfjkXulDsdK0ARUyPIPAnqvZGVby4ajJTmG1cZfseU62JQM8n3LGCBbaGR6QMiuVgcb52Y_u34a6Q7KHLEa3kw")'}}
+                      style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDL_Y4Xw1qX8PWYJQ8y6tR2f-8UG1iDRcZm_TDy1_NvkulZKm9lcG8eXOM0_mFSxcIQIkh3hPyRZgvenxKy_7lNAqnA_IBOUZUcHrBJYrHhZzsikeDltV_rrK4PfocgPHM7PO2299cxUcC4MG8qyZOrlN2cmP5HLT9GHPc9veoQaNrfn57cyqCjnIexQqcIlmBqvag_m6fVYVf1hYOy9v1pQJfaJVb0Ul5eeaBC9Ufkyi-JjQAXhoUdaMcUDqxNyDLjMIt6j31QKQ")'}}
                     ></div>
                     <div className="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
                       <div>
                         <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Kerala Spices</p>
-                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Aromatic and authentic spices.</p>
+                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Hand-picked aromatic spices.</p>
                       </div>
-                      <Link to="/shops/1" className="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30">
+                      <Link to="/shops/3" className="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30">
                         <span className="truncate">View Shop</span>
                       </Link>
                     </div>
@@ -124,6 +138,13 @@ export default function Home() {
           </div>
         </div>
       </div>
+      
+      {showToast && (
+        <Toast 
+          message="Search feature will be added soon!" 
+          onClose={() => setShowToast(false)} 
+        />
+      )}
     </div>
   );
 }

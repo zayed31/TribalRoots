@@ -1,8 +1,44 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth page transitions */
+.page-transition {
+  width: 100%;
+  min-height: 100vh;
+  will-change: opacity;
+  position: relative;
+  isolation: isolate;
+}
+
+/* Prevent layout shift during transitions */
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: auto;
+}
+
+/* Ensure smooth transitions without visible scrolling */
+html {
+  overflow-y: scroll;
+}
+
+/* Toast notification animation */
+@keyframes slide-up {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
 }
 
 .logo {
