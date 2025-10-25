@@ -356,7 +356,7 @@ export default function AmbassadorDetail() {
               <div className="p-6 rounded-lg bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">
                 <h3 className="text-lg font-bold text-text-light dark:text-text-dark mb-4">Specialized Knowledge</h3>
                 <div className="flex gap-2 flex-wrap">
-                  {ambassador.specialties.map((specialty, idx) => (
+                  {ambassador.specialties.map((specialty: string, idx: number) => (
                     <div key={idx} className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/10 dark:bg-primary/20 px-4">
                       <p className="text-primary text-sm font-medium leading-normal">{specialty}</p>
                     </div>
@@ -392,7 +392,7 @@ export default function AmbassadorDetail() {
                 {/* Content */}
                 <div className="p-6">
                   <div className="grid grid-cols-1 @container md:grid-cols-2 gap-6">
-                    {verifiedShops.map((shop) => (
+                    {verifiedShops.map((shop: { id: number; name: string; location: string; description: string; image: string }) => (
                       <Link
                         key={shop.id}
                         to={`/shops/${shop.id}`}
