@@ -9,6 +9,14 @@ import RajasthanPottery from './pages/RajasthanPottery';
 import KeralaSpices from './pages/KeralaSpices';
 import WarliArtStudio from './pages/WarliArtStudio';
 import NortheastBambooCrafts from './pages/NortheastBambooCrafts';
+import DevarajaMarket from './pages/DevarajaMarket';
+import BadshaStores from './pages/BadshaStores';
+import CauveryHandicrafts from './pages/CauveryHandicrafts';
+import SriGeethaFineArts from './pages/SriGeethaFineArts';
+import RamsonsBombeMane from './pages/RamsonsBombeMane';
+import BharathArtCrafts from './pages/BharathArtCrafts';
+import MysuruMiniatures from './pages/MysuruMiniatures';
+import NarayanaFineArts from './pages/NarayanaFineArts';
 import ShopSubmission from './pages/ShopSubmission';
 import TravelRoute from './pages/TravelRoute';
 import UserProfile from './pages/UserProfile';
@@ -84,7 +92,7 @@ function AnimatedRoutes() {
               style={pageStyle}
               className="page-transition"
             >
-              <GujaratTextiles />
+              <WarliArtStudio />
             </motion.div>
           }
         />
@@ -100,7 +108,7 @@ function AnimatedRoutes() {
               style={pageStyle}
               className="page-transition"
             >
-              <RajasthanPottery />
+              <DevarajaMarket />
             </motion.div>
           }
         />
@@ -116,7 +124,7 @@ function AnimatedRoutes() {
               style={pageStyle}
               className="page-transition"
             >
-              <KeralaSpices />
+              <BadshaStores />
             </motion.div>
           }
         />
@@ -132,7 +140,7 @@ function AnimatedRoutes() {
               style={pageStyle}
               className="page-transition"
             >
-              <WarliArtStudio />
+              <CauveryHandicrafts />
             </motion.div>
           }
         />
@@ -148,7 +156,135 @@ function AnimatedRoutes() {
               style={pageStyle}
               className="page-transition"
             >
+              <SriGeethaFineArts />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/shops/6"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={pageTransition}
+              style={pageStyle}
+              className="page-transition"
+            >
+              <RamsonsBombeMane />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/shops/7"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={pageTransition}
+              style={pageStyle}
+              className="page-transition"
+            >
+              <MysuruMiniatures />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/shops/8"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={pageTransition}
+              style={pageStyle}
+              className="page-transition"
+            >
+              <NarayanaFineArts />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/shops/9"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={pageTransition}
+              style={pageStyle}
+              className="page-transition"
+            >
+              <GujaratTextiles />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/shops/10"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={pageTransition}
+              style={pageStyle}
+              className="page-transition"
+            >
+              <RajasthanPottery />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/shops/11"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={pageTransition}
+              style={pageStyle}
+              className="page-transition"
+            >
+              <KeralaSpices />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/shops/12"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={pageTransition}
+              style={pageStyle}
+              className="page-transition"
+            >
               <NortheastBambooCrafts />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/shops/13"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={pageTransition}
+              style={pageStyle}
+              className="page-transition"
+            >
+              <BharathArtCrafts />
             </motion.div>
           }
         />

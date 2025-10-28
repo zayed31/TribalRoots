@@ -58,18 +58,18 @@ export default function Home() {
 
               {/* Featured Section */}
               <div className="px-4 py-8">
-                <h2 className="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-5 text-center">Featured Tribal Treasures</h2>
+                <h2 className="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-5 text-center">Explore Mysuru's Cultural Heritage</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-                  {/* Card 1 */}
+                  {/* Card 1 - Warli Art Studio */}
                   <div className="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
                     <div 
                       className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" 
-                      style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCa0OYD4KcLRBBuwCaMAKI8ROAojBH_29r7Tzhdb8PGq2dwuEEw3jWnE81jcLMPedEQMfaMEF6vqcmP7ORpSQ_83XM0ihYR06vkz4JmK3DJxAcLYDejfap_8IAY8byX0eXFDdnsxFK3q7V6ujyJvy1huJeHda3iBEBHfKU9C4BCwwlnoruiZxgScvsBaoQOLnWe3M2lNNvHUmTcpQcqlPjkIs7e0ws7axIzx577rV0yH5kfmwkxpkwaOiyI9N693-stcYLLpkXfVg")'}}
+                      style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCx1JdlVT-7DnwpWfm_mlwQu0UwaNEBeOO_Q-ZTsgYKdR8UNEuOetoEUju8VmltHcJUai6B2ohHCzRTu4Vc6fCRxqOTAlMpMp5PpViyGO7g74gO2Sy27w-Ql0pZJsNG3ZoJ22piTNm51qYMd9Skvn5213CE--Ti7qEZzQryrtOH39Z2Xv-9UDReF-ushhNXYXUIxOti2n-bSNbcvlireAG3gFPkS3l2LabeXUDyZYsO2MjOXjCsMlU2iwWlXsGzQt_xWDvwyNZP5A")'}}
                     ></div>
                     <div className="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
                       <div>
-                        <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Gujarat Textiles</p>
-                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Hand-woven textiles and fabrics.</p>
+                        <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Warli Art Studio</p>
+                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Traditional Warli tribal art</p>
                       </div>
                       <Link to="/shops/1" className="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30">
                         <span className="truncate">View Shop</span>
@@ -77,16 +77,16 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {/* Card 2 */}
+                  {/* Card 2 - Devaraja Market */}
                   <div className="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
                     <div 
                       className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" 
-                      style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHJNIw_y2BDDIy7x-N-lG6rOB5W6jClHkC0FAqA27Ea-oMGUvzWFfpWf34n4zrRYBsix7wu-6MnX4AaxV7AXvYNByAVLRSaLDc4ZX9W_p9QaVdnkiEF27SiFGgECsh_SZkF4BqY4VK9Mwu9vHNXGA5rrtYF7boMUGxqb-zrrmcP6HO_9Xfhv_tHWy7n72vfKOZq1HMbHxHPYtnS1zeej2_X2z89EukuKehwM_ALzagonFqSt3M27qs3vEzz3_gjwxefq_HVUtVuA")'}}
+                      style={{backgroundImage: 'url("/Images/DevarajaMarket.jpg")'}}
                     ></div>
                     <div className="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
                       <div>
-                        <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Rajasthan Pottery</p>
-                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Authentic Rajasthani blue pottery.</p>
+                        <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Devaraja Market</p>
+                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Historic bazaar with flowers & spices</p>
                       </div>
                       <Link to="/shops/2" className="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30">
                         <span className="truncate">View Shop</span>
@@ -94,18 +94,52 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {/* Card 3 */}
+                  {/* Card 3 - Badsha Stores */}
                   <div className="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
                     <div 
                       className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" 
-                      style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDL_Y4Xw1qX8PWYJQ8y6tR2f-8UG1iDRcZm_TDy1_NvkulZKm9lcG8eXOM0_mFSxcIQIkh3hPyRZgvenxKy_7lNAqnA_IBOUZUcHrBJYrHhZzsikeDltV_rrK4PfocgPHM7PO2299cxUcC4MG8qyZOrlN2cmP5HLT9GHPc9veoQaNrfn57cyqCjnIexQqcIlmBqvag_m6fVYVf1hYOy9v1pQJfaJVb0Ul5eeaBC9Ufkyi-JjQAXhoUdaMcUDqxNyDLjMIt6j31QKQ")'}}
+                      style={{backgroundImage: 'url("/Images/BadshahStores.jpg")'}}
                     ></div>
                     <div className="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
                       <div>
-                        <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Kerala Spices</p>
-                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Hand-picked aromatic spices.</p>
+                        <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Badsha Stores</p>
+                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Authentic Mysore silk sarees</p>
                       </div>
                       <Link to="/shops/3" className="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30">
+                        <span className="truncate">View Shop</span>
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* Card 4 - Cauvery Handicrafts */}
+                  <div className="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+                    <div 
+                      className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" 
+                      style={{backgroundImage: 'url("/Images/CauveryHandicrafts.jpg")'}}
+                    ></div>
+                    <div className="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                      <div>
+                        <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Cauvery Handicrafts</p>
+                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Government craft emporium</p>
+                      </div>
+                      <Link to="/shops/4" className="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30">
+                        <span className="truncate">View Shop</span>
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* Card 5 - Sri Geetha Fine Arts */}
+                  <div className="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+                    <div 
+                      className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" 
+                      style={{backgroundImage: 'url("/Images/SriGeetaArts.jpg")'}}
+                    ></div>
+                    <div className="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                      <div>
+                        <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Sri Geetha Fine Arts</p>
+                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Rosewood inlay workshop</p>
+                      </div>
+                      <Link to="/shops/5" className="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30">
                         <span className="truncate">View Shop</span>
                       </Link>
                     </div>

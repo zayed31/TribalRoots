@@ -7,36 +7,6 @@ export default function ShopsList() {
   const shops = [
     {
       id: 1,
-      name: "Gujarat Textiles",
-      location: "Chikmagalur, Karnataka",
-      category: "Hand-woven Textiles",
-      rating: 4.5,
-      reviews: 123,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCoxUC_FYzoRsn9lQQLhTzuCQsWWfT46t5P1lBDzSchopMn05l0mRqgPZ4qrPVYf2DqmTQUp9YiwG43jpRMh_MU9wNmN0XAzsFzjz3fECL9YZwjWycYfqnWnxwhMw-ky7fdnF2mTRF6YU2d_cj1S_AcoXZsNf66po_MCs4-VLt0tyqU-cCt0yq0GRj9vzKzB_vr4ePYpJ-vLobiO5x7mcGCsuVMPdDwPOOvIwxD4vEu4J21jPk1DFTfFTg3ZAM3z_W_B8NXxAn1Ow",
-      description: "Authentic handwoven textiles like Bandhani tie-dye and Patola silk sarees from Gujarat's finest artisans."
-    },
-    {
-      id: 2,
-      name: "Rajasthan Pottery",
-      location: "Bengaluru, Karnataka",
-      category: "Blue Pottery",
-      rating: 4.8,
-      reviews: 142,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCHJNIw_y2BDDIy7x-N-lG6rOB5W6jClHkC0FAqA27Ea-oMGUvzWFfpWf34n4zrRYBsix7wu-6MnX4AaxV7AXvYNByAVLRSaLDc4ZX9W_p9QaVdnkiEF27SiFGgECsh_SZkF4BqY4VK9Mwu9vHNXGA5rrtYF7boMUGxqb-zrrmcP6HO_9Xfhv_tHWy7n72vfKOZq1HMbHxHPYtnS1zeej2_X2z89EukuKehwM_ALzagonFqSt3M27qs3vEzz3_gjwxefq_HVUtVuA",
-      description: "Authentic Rajasthani blue pottery in Karnataka, offering a vibrant collection of handmade crafts."
-    },
-    {
-      id: 3,
-      name: "Kerala Spices",
-      location: "Madikeri, Karnataka",
-      category: "Spices & Herbs",
-      rating: 4.8,
-      reviews: 124,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDL_Y4Xw1qX8PWYJQ8y6tR2f-8UG1iDRcZm_TDy1_NvkulZKm9lcG8eXOM0_mFSxcIQIkh3hPyRZgvenxKy_7lNAqnA_IBOUZUcHrBJYrHhZzsikeDltV_rrK4PfocgPHM7PO2299cxUcC4MG8qyZOrlN2cmP5HLT9GHPc9veoQaNrfn57cyqCjnIexQqcIlmBqvag_m6fVYVf1hYOy9v1pQJfaJVb0Ul5eeaBC9Ufkyi-JjQAXhoUdaMcUDqxNyDLjMIt6j31QKQ",
-      description: "Hand-picked, sun-dried spices from the Kuruba tribe, celebrating Kerala's rich spice heritage."
-    },
-    {
-      id: 4,
       name: "Warli Art Studio",
       location: "Mysuru, Karnataka",
       category: "Warli Tribal Art",
@@ -46,7 +16,107 @@ export default function ShopsList() {
       description: "Traditional Warli art studio preserving ancient tribal traditions with contemporary pieces."
     },
     {
+      id: 2,
+      name: "Devaraja Market",
+      location: "Mysuru, Karnataka",
+      category: "Historic Bazaar",
+      rating: 4.5,
+      reviews: 850,
+      image: "/Images/DevarajaMarket.jpg",
+      description: "Century-old market famous for fresh flowers, spices, sandalwood products, and traditional crafts."
+    },
+    {
+      id: 3,
+      name: "Badsha Stores",
+      location: "Mysuru, Karnataka",
+      category: "Mysore Silk",
+      rating: 4.5,
+      reviews: 320,
+      image: "/Images/BadshahStores.jpg",
+      description: "Authentic Mysore silk sarees and dress materials with KSIC certification and traditional shopping experience."
+    },
+    {
+      id: 4,
+      name: "Cauvery Handicrafts",
+      location: "Mysuru, Karnataka",
+      category: "Government Emporium",
+      rating: 4.5,
+      reviews: 450,
+      image: "/Images/CauveryHandicrafts.jpg",
+      description: "Karnataka State Arts & Crafts Emporium offering authenticated GI-tagged handicrafts including sandalwood, Mysore silk, and rosewood inlay."
+    },
+    {
       id: 5,
+      name: "Sri (New) Geetha Fine Arts",
+      location: "Mandi Mohalla, Mysuru, Karnataka",
+      category: "Artisan Workshop",
+      rating: 4.5,
+      reviews: 145,
+      image: "/Images/SriGeetaArts.jpg",
+      description: "Traditional rosewood inlay & marquetry workshop in old Mysore—decades of hand-crafted furniture, decorative panels, and boxes."
+    },
+    {
+      id: 6,
+      name: "Ramsons Bombe Mane",
+      location: "Nazarbad, Mysuru, Karnataka",
+      category: "Cultural Studio",
+      rating: 4.5,
+      reviews: 220,
+      image: "/Images/RamsomBombeMane.jpg",
+      description: "Traditional doll house & cultural exhibition space—handcrafted dolls from artisan clusters across India, Golu displays, folk art."
+    },
+    {
+      id: 7,
+      name: "Mysuru Miniatures",
+      location: "Metagalli, Mysuru, Karnataka",
+      category: "Artisan Studio",
+      rating: 4.5,
+      reviews: 95,
+      image: "/Images/MysoreMiniatures.webp",
+      description: "One-person studio creating museum-quality miniature models—temples, palaces, heritage homes, cultural dioramas, custom commissions."
+    },
+    {
+      id: 8,
+      name: "Narayana Fine Arts & Crafts",
+      location: "Mysuru, Karnataka",
+      category: "Heritage Workshop",
+      rating: 4.5,
+      reviews: 210,
+      image: "/Images/NarayanaFineArtsAndCrafts.jpeg",
+      description: "Traditional rosewood & teakwood furniture workshop since 1969—three generations of master carvers and inlay artisans."
+    },
+    {
+      id: 9,
+      name: "Gujarat Textiles",
+      location: "Chikmagalur, Karnataka",
+      category: "Hand-woven Textiles",
+      rating: 4.5,
+      reviews: 123,
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCoxUC_FYzoRsn9lQQLhTzuCQsWWfT46t5P1lBDzSchopMn05l0mRqgPZ4qrPVYf2DqmTQUp9YiwG43jpRMh_MU9wNmN0XAzsFzjz3fECL9YZwjWycYfqnWnxwhMw-ky7fdnF2mTRF6YU2d_cj1S_AcoXZsNf66po_MCs4-VLt0tyqU-cCt0yq0GRj9vzKzB_vr4ePYpJ-vLobiO5x7mcGCsuVMPdDwPOOvIwxD4vEu4J21jPk1DFTfFTg3ZAM3z_W_B8NXxAn1Ow",
+      description: "Authentic handwoven textiles like Bandhani tie-dye and Patola silk sarees from Gujarat's finest artisans."
+    },
+    {
+      id: 10,
+      name: "Rajasthan Pottery",
+      location: "Bengaluru, Karnataka",
+      category: "Blue Pottery",
+      rating: 4.8,
+      reviews: 142,
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCHJNIw_y2BDDIy7x-N-lG6rOB5W6jClHkC0FAqA27Ea-oMGUvzWFfpWf34n4zrRYBsix7wu-6MnX4AaxV7AXvYNByAVLRSaLDc4ZX9W_p9QaVdnkiEF27SiFGgECsh_SZkF4BqY4VK9Mwu9vHNXGA5rrtYF7boMUGxqb-zrrmcP6HO_9Xfhv_tHWy7n72vfKOZq1HMbHxHPYtnS1zeej2_X2z89EukuKehwM_ALzagonFqSt3M27qs3vEzz3_gjwxefq_HVUtVuA",
+      description: "Authentic Rajasthani blue pottery in Karnataka, offering a vibrant collection of handmade crafts."
+    },
+    {
+      id: 11,
+      name: "Kerala Spices",
+      location: "Madikeri, Karnataka",
+      category: "Spices & Herbs",
+      rating: 4.8,
+      reviews: 124,
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDL_Y4Xw1qX8PWYJQ8y6tR2f-8UG1iDRcZm_TDy1_NvkulZKm9lcG8eXOM0_mFSxcIQIkh3hPyRZgvenxKy_7lNAqnA_IBOUZUcHrBJYrHhZzsikeDltV_rrK4PfocgPHM7PO2299cxUcC4MG8qyZOrlN2cmP5HLT9GHPc9veoQaNrfn57cyqCjnIexQqcIlmBqvag_m6fVYVf1hYOy9v1pQJfaJVb0Ul5eeaBC9Ufkyi-JjQAXhoUdaMcUDqxNyDLjMIt6j31QKQ",
+      description: "Hand-picked, sun-dried spices from the Kuruba tribe, celebrating Kerala's rich spice heritage."
+    },
+    {
+      id: 12,
       name: "Northeast Bamboo Crafts",
       location: "Bengaluru, Karnataka",
       category: "Bamboo Handicrafts",
@@ -54,6 +124,16 @@ export default function ShopsList() {
       reviews: 124,
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA0vads5uIFbKKorG_DiY3Lgj8siTMyw--GjePg8jgHDLI7XkzfLkXtmuaDTtpGIH6wKOwOb2s4Q8a39hLUk5GdAKX2j1_CUd3uqo5rO11PqXHeJr_cRIS6c0PTOEXbdFhflSh8q8N7eEqB7ggQrzKSkDS3rsBexTBvZwaBT7OxiWUat0jTs4yjIxr2f7-cA5S53VJS2o1qu_nag-fVYUvUWFh9ihuyAi3WXUgnrzkgnwvLQttTNRVOoDmZYtZ7D0Iv5chQIyrzEw",
       description: "Authentic artistry from the Seven Sisters, bringing Northeastern bamboo weaving to Karnataka."
+    },
+    {
+      id: 13,
+      name: "Bharath Art & Crafts",
+      location: "Channapatna, Karnataka (60 km from Mysuru & Bengaluru)",
+      category: "Craft Cluster",
+      rating: 4.5,
+      reviews: 380,
+      image: "/Images/BharatArtsAndCrafts.avif",
+      description: "GI-tagged Channapatna wooden lacquer toys—family workshop with factory tours, live demos, 100% eco-friendly traditional crafts."
     }
   ];
 
