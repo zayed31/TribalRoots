@@ -60,7 +60,7 @@ export default function BharathArtCrafts() {
               <div
                 className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
                 style={{
-                  backgroundImage: 'url("/Images/BharatArtsAndCrafts.avif")',
+                  backgroundImage: 'url("/Images/BharatArtsAndCrafts.jpg")',
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}
@@ -75,7 +75,7 @@ export default function BharathArtCrafts() {
                 <div className="flex flex-col gap-4 p-6 rounded-xl bg-surface-light dark:bg-surface-dark">
                   <div className="flex flex-col gap-2">
                     <h1 className="text-text-light dark:text-text-dark text-4xl font-black leading-tight tracking-[-0.033em]">
-                      Bharath Art & Crafts
+                      Channapatna Toys Shop
                     </h1>
                     <p className="text-text-light/80 dark:text-text-dark/80 text-base font-normal leading-normal">
                       Traditional Channapatna Wooden Lacquer Toys & Factory Tours
@@ -171,10 +171,10 @@ export default function BharathArtCrafts() {
                       <div className="flex flex-col gap-4">
                         <h2 className="text-text-light dark:text-text-dark text-2xl font-bold">Welcome to Channapatna's Toy-Making Heartland</h2>
                         <p className="text-text-light/80 dark:text-text-dark/80 text-base leading-relaxed">
-                          Bharath Art & Crafts is a family-run workshop representing the authentic soul of Channapatna—India's "Toy Town" famous for vibrant wooden lacquer toys that have delighted children for over 200 years. Located in the heart of Channapatna's craft cluster at Nizami Chouk, this small factory and artisan unit welcomes visitors to witness the magical transformation of simple wood into colorful, eco-friendly toys using traditional techniques passed down through generations.
+                          Channapatna Toys Shop is a family-run workshop representing the authentic soul of Channapatna—India's "Toy Town" famous for vibrant wooden lacquer toys that have delighted children for over 200 years. Located in the heart of Channapatna's craft cluster at Nizami Chouk, this small factory and artisan unit welcomes visitors to witness the magical transformation of simple wood into colorful, eco-friendly toys using traditional techniques passed down through generations.
                         </p>
                         <p className="text-text-light/80 dark:text-text-dark/80 text-base leading-relaxed">
-                          What makes Bharath Art & Crafts special is their commitment to maintaining traditional methods while welcoming curious visitors. Unlike large commercial operations, this is a family home-unit model where artisans work at wooden lathes in workshops adjacent to their homes—the authentic small-scale setup that built Channapatna's reputation. Factory visits and live demonstrations are available (call ahead to arrange), offering a rare glimpse into a UNESCO-recognized craft tradition.
+                          What makes Channapatna Toys Shop special is their commitment to maintaining traditional methods while welcoming curious visitors. Unlike large commercial operations, this is a family home-unit model where artisans work at wooden lathes in workshops adjacent to their homes—the authentic small-scale setup that built Channapatna's reputation. Factory visits and live demonstrations are available (call ahead to arrange), offering a rare glimpse into a UNESCO-recognized craft tradition.
                         </p>
                         
                         <h3 className="text-text-light dark:text-text-dark text-xl font-bold mt-4">Signature Products</h3>

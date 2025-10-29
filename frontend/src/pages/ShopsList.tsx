@@ -6,6 +6,16 @@ export default function ShopsList() {
   // Mock data for multiple shops
   const shops = [
     {
+      id: 12,
+      name: "Channapatna Toys Shop",
+      location: "Channapatna, Karnataka (60 km from Mysuru & Bengaluru)",
+      category: "Craft Cluster",
+      rating: 4.5,
+      reviews: 380,
+      image: "/Images/BharatArtsAndCrafts.jpg",
+      description: "GI-tagged Channapatna wooden lacquer toys—family workshop with factory tours, live demos, 100% eco-friendly traditional crafts."
+    },
+    {
       id: 1,
       name: "Warli Art Studio",
       location: "Mysuru, Karnataka",
@@ -27,26 +37,6 @@ export default function ShopsList() {
     },
     {
       id: 3,
-      name: "Badsha Stores",
-      location: "Mysuru, Karnataka",
-      category: "Mysore Silk",
-      rating: 4.5,
-      reviews: 320,
-      image: "/Images/BadshahStores.jpg",
-      description: "Authentic Mysore silk sarees and dress materials with KSIC certification and traditional shopping experience."
-    },
-    {
-      id: 4,
-      name: "Cauvery Handicrafts",
-      location: "Mysuru, Karnataka",
-      category: "Government Emporium",
-      rating: 4.5,
-      reviews: 450,
-      image: "/Images/CauveryHandicrafts.jpg",
-      description: "Karnataka State Arts & Crafts Emporium offering authenticated GI-tagged handicrafts including sandalwood, Mysore silk, and rosewood inlay."
-    },
-    {
-      id: 5,
       name: "Sri (New) Geetha Fine Arts",
       location: "Mandi Mohalla, Mysuru, Karnataka",
       category: "Artisan Workshop",
@@ -56,7 +46,7 @@ export default function ShopsList() {
       description: "Traditional rosewood inlay & marquetry workshop in old Mysore—decades of hand-crafted furniture, decorative panels, and boxes."
     },
     {
-      id: 6,
+      id: 4,
       name: "Ramsons Bombe Mane",
       location: "Nazarbad, Mysuru, Karnataka",
       category: "Cultural Studio",
@@ -66,7 +56,7 @@ export default function ShopsList() {
       description: "Traditional doll house & cultural exhibition space—handcrafted dolls from artisan clusters across India, Golu displays, folk art."
     },
     {
-      id: 7,
+      id: 5,
       name: "Mysuru Miniatures",
       location: "Metagalli, Mysuru, Karnataka",
       category: "Artisan Studio",
@@ -76,7 +66,7 @@ export default function ShopsList() {
       description: "One-person studio creating museum-quality miniature models—temples, palaces, heritage homes, cultural dioramas, custom commissions."
     },
     {
-      id: 8,
+      id: 6,
       name: "Narayana Fine Arts & Crafts",
       location: "Mysuru, Karnataka",
       category: "Heritage Workshop",
@@ -86,7 +76,17 @@ export default function ShopsList() {
       description: "Traditional rosewood & teakwood furniture workshop since 1969—three generations of master carvers and inlay artisans."
     },
     {
-      id: 9,
+      id: 7,
+      name: "Mr. Najundayya Bamboo Weavers",
+      location: "Mysore Rural Region, Karnataka",
+      category: "Bamboo Basketry",
+      rating: 4.5,
+      reviews: 68,
+      image: "/Images/NanjundaiyahBambooWeavers.jpg",
+      description: "Traditional bamboo & cane basket weaving—3rd generation rural artisan offering live demonstrations and custom orders."
+    },
+    {
+      id: 8,
       name: "Gujarat Textiles",
       location: "Chikmagalur, Karnataka",
       category: "Hand-woven Textiles",
@@ -96,7 +96,7 @@ export default function ShopsList() {
       description: "Authentic handwoven textiles like Bandhani tie-dye and Patola silk sarees from Gujarat's finest artisans."
     },
     {
-      id: 10,
+      id: 9,
       name: "Rajasthan Pottery",
       location: "Bengaluru, Karnataka",
       category: "Blue Pottery",
@@ -106,7 +106,7 @@ export default function ShopsList() {
       description: "Authentic Rajasthani blue pottery in Karnataka, offering a vibrant collection of handmade crafts."
     },
     {
-      id: 11,
+      id: 10,
       name: "Kerala Spices",
       location: "Madikeri, Karnataka",
       category: "Spices & Herbs",
@@ -116,7 +116,7 @@ export default function ShopsList() {
       description: "Hand-picked, sun-dried spices from the Kuruba tribe, celebrating Kerala's rich spice heritage."
     },
     {
-      id: 12,
+      id: 11,
       name: "Northeast Bamboo Crafts",
       location: "Bengaluru, Karnataka",
       category: "Bamboo Handicrafts",
@@ -125,16 +125,7 @@ export default function ShopsList() {
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA0vads5uIFbKKorG_DiY3Lgj8siTMyw--GjePg8jgHDLI7XkzfLkXtmuaDTtpGIH6wKOwOb2s4Q8a39hLUk5GdAKX2j1_CUd3uqo5rO11PqXHeJr_cRIS6c0PTOEXbdFhflSh8q8N7eEqB7ggQrzKSkDS3rsBexTBvZwaBT7OxiWUat0jTs4yjIxr2f7-cA5S53VJS2o1qu_nag-fVYUvUWFh9ihuyAi3WXUgnrzkgnwvLQttTNRVOoDmZYtZ7D0Iv5chQIyrzEw",
       description: "Authentic artistry from the Seven Sisters, bringing Northeastern bamboo weaving to Karnataka."
     },
-    {
-      id: 13,
-      name: "Bharath Art & Crafts",
-      location: "Channapatna, Karnataka (60 km from Mysuru & Bengaluru)",
-      category: "Craft Cluster",
-      rating: 4.5,
-      reviews: 380,
-      image: "/Images/BharatArtsAndCrafts.avif",
-      description: "GI-tagged Channapatna wooden lacquer toys—family workshop with factory tours, live demos, 100% eco-friendly traditional crafts."
-    }
+    
   ];
 
   const renderStars = (rating: number) => {

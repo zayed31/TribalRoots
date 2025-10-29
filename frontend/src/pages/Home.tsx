@@ -60,6 +60,22 @@ export default function Home() {
               <div className="px-4 py-8">
                 <h2 className="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-5 text-center">Explore Mysuru's Cultural Heritage</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+                  {/* Card 0 - Channapatna Toys Shop (featured) */}
+                  <div className="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+                    <div 
+                      className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" 
+                      style={{backgroundImage: 'url("/Images/BharatArtsAndCrafts.jpg")'}}
+                    ></div>
+                    <div className="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                      <div>
+                        <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Channapatna Toys Shop</p>
+                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Traditional Channapatna wooden lacquer toys & factory tours</p>
+                      </div>
+                      <Link to="/shops/12" className="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30">
+                        <span className="truncate">View Shop</span>
+                      </Link>
+                    </div>
+                  </div>
                   {/* Card 1 - Warli Art Studio */}
                   <div className="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
                     <div 
@@ -94,41 +110,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {/* Card 3 - Badsha Stores */}
-                  <div className="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
-                    <div 
-                      className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" 
-                      style={{backgroundImage: 'url("/Images/BadshahStores.jpg")'}}
-                    ></div>
-                    <div className="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
-                      <div>
-                        <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Badsha Stores</p>
-                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Authentic Mysore silk sarees</p>
-                      </div>
-                      <Link to="/shops/3" className="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30">
-                        <span className="truncate">View Shop</span>
-                      </Link>
-                    </div>
-                  </div>
-
-                  {/* Card 4 - Cauvery Handicrafts */}
-                  <div className="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
-                    <div 
-                      className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" 
-                      style={{backgroundImage: 'url("/Images/CauveryHandicrafts.jpg")'}}
-                    ></div>
-                    <div className="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
-                      <div>
-                        <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Cauvery Handicrafts</p>
-                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Government craft emporium</p>
-                      </div>
-                      <Link to="/shops/4" className="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30">
-                        <span className="truncate">View Shop</span>
-                      </Link>
-                    </div>
-                  </div>
-
-                  {/* Card 5 - Sri Geetha Fine Arts */}
+                  {/* Card 3 - Sri Geetha Fine Arts */}
                   <div className="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
                     <div 
                       className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" 
@@ -138,6 +120,40 @@ export default function Home() {
                       <div>
                         <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Sri Geetha Fine Arts</p>
                         <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Rosewood inlay workshop</p>
+                      </div>
+                      <Link to="/shops/3" className="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30">
+                        <span className="truncate">View Shop</span>
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* Card 4 - Ramsons Bombe Mane */}
+                  <div className="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+                    <div 
+                      className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" 
+                      style={{backgroundImage: 'url("/Images/RamsomBombeMane.jpg")'}}
+                    ></div>
+                    <div className="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                      <div>
+                        <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Ramsons Bombe Mane</p>
+                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Traditional doll house & cultural exhibits</p>
+                      </div>
+                      <Link to="/shops/4" className="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30">
+                        <span className="truncate">View Shop</span>
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* Card 5 - Mysuru Miniatures */}
+                  <div className="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+                    <div 
+                      className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" 
+                      style={{backgroundImage: 'url("/Images/MysoreMiniatures.webp")'}}
+                    ></div>
+                    <div className="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                      <div>
+                        <p className="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Mysuru Miniatures</p>
+                        <p className="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Museum-quality miniature models</p>
                       </div>
                       <Link to="/shops/5" className="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30">
                         <span className="truncate">View Shop</span>

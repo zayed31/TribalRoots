@@ -10,13 +10,12 @@ import KeralaSpices from './pages/KeralaSpices';
 import WarliArtStudio from './pages/WarliArtStudio';
 import NortheastBambooCrafts from './pages/NortheastBambooCrafts';
 import DevarajaMarket from './pages/DevarajaMarket';
-import BadshaStores from './pages/BadshaStores';
-import CauveryHandicrafts from './pages/CauveryHandicrafts';
 import SriGeethaFineArts from './pages/SriGeethaFineArts';
 import RamsonsBombeMane from './pages/RamsonsBombeMane';
 import BharathArtCrafts from './pages/BharathArtCrafts';
 import MysuruMiniatures from './pages/MysuruMiniatures';
 import NarayanaFineArts from './pages/NarayanaFineArts';
+import NajundayyaBambooWeavers from './pages/NajundayyaBambooWeavers';
 import ShopSubmission from './pages/ShopSubmission';
 import TravelRoute from './pages/TravelRoute';
 import UserProfile from './pages/UserProfile';
@@ -124,7 +123,7 @@ function AnimatedRoutes() {
               style={pageStyle}
               className="page-transition"
             >
-              <BadshaStores />
+              <SriGeethaFineArts />
             </motion.div>
           }
         />
@@ -140,7 +139,7 @@ function AnimatedRoutes() {
               style={pageStyle}
               className="page-transition"
             >
-              <CauveryHandicrafts />
+              <RamsonsBombeMane />
             </motion.div>
           }
         />
@@ -156,7 +155,7 @@ function AnimatedRoutes() {
               style={pageStyle}
               className="page-transition"
             >
-              <SriGeethaFineArts />
+              <MysuruMiniatures />
             </motion.div>
           }
         />
@@ -172,7 +171,7 @@ function AnimatedRoutes() {
               style={pageStyle}
               className="page-transition"
             >
-              <RamsonsBombeMane />
+              <NarayanaFineArts />
             </motion.div>
           }
         />
@@ -188,7 +187,7 @@ function AnimatedRoutes() {
               style={pageStyle}
               className="page-transition"
             >
-              <MysuruMiniatures />
+              <NajundayyaBambooWeavers />
             </motion.div>
           }
         />
@@ -204,7 +203,7 @@ function AnimatedRoutes() {
               style={pageStyle}
               className="page-transition"
             >
-              <NarayanaFineArts />
+              <GujaratTextiles />
             </motion.div>
           }
         />
@@ -220,7 +219,7 @@ function AnimatedRoutes() {
               style={pageStyle}
               className="page-transition"
             >
-              <GujaratTextiles />
+              <RajasthanPottery />
             </motion.div>
           }
         />
@@ -236,7 +235,7 @@ function AnimatedRoutes() {
               style={pageStyle}
               className="page-transition"
             >
-              <RajasthanPottery />
+              <KeralaSpices />
             </motion.div>
           }
         />
@@ -252,28 +251,12 @@ function AnimatedRoutes() {
               style={pageStyle}
               className="page-transition"
             >
-              <KeralaSpices />
-            </motion.div>
-          }
-        />
-        <Route
-          path="/shops/12"
-          element={
-            <motion.div
-              variants={pageVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              transition={pageTransition}
-              style={pageStyle}
-              className="page-transition"
-            >
               <NortheastBambooCrafts />
             </motion.div>
           }
         />
         <Route
-          path="/shops/13"
+          path="/shops/12"
           element={
             <motion.div
               variants={pageVariants}
